@@ -185,14 +185,14 @@ const Login = () => {
         {newUser ? (
           <Button
             type="submit"
-            className="log-in-btn btn-primary  btn-lg btn-block"
+            className="log-in-btn btn-success  btn-lg btn-block"
           >
             Create an account
           </Button>
         ) : (
           <Button
             type="submit"
-            className="log-in-btn btn-primary  btn-lg btn-block"
+            className="log-in-btn btn-success btn-lg btn-block"
           >
             Login
           </Button>

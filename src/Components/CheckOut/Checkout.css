@@ -4,20 +4,3 @@
     padding: 40px;
     box-shadow: 0px 0px 1px gray;
 }
-.table.no-border tr td, .table.no-border tr th {
-    border-width: 0;
-  }
-  
-  caption {
-    font-size: 16pt;
-  }
-  .jumbotron {
-    padding: 5px inherit;
-  }
-
-.quantity-number{
-    text-align: center;
-  }
-.price-col{
-    text-align: right;
-}

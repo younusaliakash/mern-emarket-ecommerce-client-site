@@ -10,11 +10,10 @@ const Checkout = () => {
     const [selectedProduct, setSelectedProduct] = useState({})
     
     useEffect(() => {
-        fetch('http://localhost:5000/getSelectedProduct?id='+_id)
+        fetch('https://lychee-custard-23954.herokuapp.com/getSelectedProduct?id='+_id)
         .then(response => response.json())
         .then(data => setSelectedProduct(data[0]))
     },[_id])
-    // console.log(selectedProduct)
 
     const handleCkeckout = () => {
       const order = {...loggedInUser, ...selectedProduct}
@@ -22,7 +21,7 @@ const Checkout = () => {
       delete order._id;
       order.orderDate = orderDate;
       
-      fetch('http://localhost:5000/addOrder',{
+      fetch('https://lychee-custard-23954.herokuapp.com/addOrder',{
         method : "POST",
         headers : {'Content-Type' : 'application/json'},
         body : JSON.stringify(order)
@@ -32,7 +31,7 @@ const Checkout = () => {
           alert('Order Place Successfully done!')
       })
       .catch(e => {
-        console.log(e)
+
       })
     }
 

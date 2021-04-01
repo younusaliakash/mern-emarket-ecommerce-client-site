@@ -11,20 +11,19 @@ const ManageProduct = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://lychee-custard-23954.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
 
   const handleDelete = (id) =>{
-    console.log(id)
-    fetch(`http://localhost:5000/deleteProduct/${id}`, {
+    fetch(`https://lychee-custard-23954.herokuapp.com/deleteProduct/${id}`, {
       method : "DELETE",
       headers : {'Content-Type' : 'application/json'},
       body : JSON.stringify(products)
     })
     .then(() => {
-      fetch("http://localhost:5000/products")
+      fetch("https://lychee-custard-23954.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
     })
@@ -39,7 +38,7 @@ const ManageProduct = () => {
           <thead>
             <tr>
               <th>Product Name</th>
-              <th>Wight</th>
+              <th>Weight/GSM</th>
               <th>Price</th>
               <th>Action</th>
             </tr>
@@ -51,7 +50,7 @@ const ManageProduct = () => {
             {products?.map((product) => (
               <tr>
                 <td>{product.productName}</td>
-                <td>{product.productWight}gm</td>
+                <td>{product.productWeight}</td>
                 <td>${product.productPrice}</td>
                 <td>
                   <Button className="btn btn-success edit">

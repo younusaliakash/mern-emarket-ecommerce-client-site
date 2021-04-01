@@ -37,9 +37,6 @@
     color: black;
     font-weight: 700;
 }
-/* .social-link:hover {
-    color: white;
-} */
 .social{
     border: 1px solid gray;
     border-radius: 50px;
@@ -54,7 +51,3 @@
     color: white !important;
     background-color: red;
 }
-/* .facebook-area:hover{
-    color: white !important;
-    background-color: #1877F2;
-} */

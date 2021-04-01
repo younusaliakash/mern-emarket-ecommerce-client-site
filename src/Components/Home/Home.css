@@ -4,8 +4,54 @@
 .products{
     padding: 20px;
 }
+.search-area{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.search-btn-box{
+    width: 343px;
+    border: 2px solid green;
+    border-radius: 20px ;
+}
+.search-bar{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: black;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+}
+.search-btn-box:hover{
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
+}
+input[type="text"]{
+    padding-left: 20px;
+}
+.search{
+    outline: none !important;
+    color: white;
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 17px;
+    cursor: pointer;
+}
+.search:hover{
+    background-color: rgb(25, 114, 25);
+}
+
 @media only screen and (min-width: 992px){
     .products{
-        padding: 70px;
+        padding: 90px;
     }
   }
+@media only screen and (max-width: 548px){
+    .search-bar{
+        width: 140px;
+    }
+    .search-btn-box{
+        width: 233px;
+    }
+  } 

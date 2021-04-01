@@ -7,10 +7,9 @@ const Orders = () => {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/getOrders?email=`+loggedInUser.email)
+        fetch(`https://lychee-custard-23954.herokuapp.com/getOrders?email=`+loggedInUser.email)
         .then(response => response.json())
         .then(data => {
-            console.log(data)
             setOrders(data)
         })
     },[loggedInUser.email])
@@ -22,7 +21,7 @@ const Orders = () => {
             Welcome! <span className="user-name">{loggedInUser.displayName}</span>
           </h4>
           <h5>Your Order Timeline</h5>
-          <h6>Total Oders: {orders.length}</h6>
+          <h6>Total Orders: {orders.length}</h6>
         </div>
         <div className="order-product-description">
           <div className="row">
@@ -41,14 +40,11 @@ const Orders = () => {
           </div>
         </div>
         {
-            orders.length === 0 && <div className="loading-orders"> <img src="https://epaper.timesgroup.com/TOI/TimesOfIndia/Images/Spinner.gif" alt=""/></div>
-        }
-        {
             orders?.map( order => <div className="order-product-description">
             <div className="row">
               <div className="col-4">
                 <b>{order.productName}</b>
-                <p>Wight : {order.productWight}</p>
+                <p>Weight/GSM : {order.productWeight}</p>
               </div>
               <div className="col-3">
                 <b>1</b>

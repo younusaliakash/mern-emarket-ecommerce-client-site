@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./AdminMenu.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilAlt, faPlus, faTasks } from '@fortawesome/free-solid-svg-icons'

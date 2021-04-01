@@ -18,14 +18,15 @@ const AddProduct = () => {
         setProductImageURL(res.data.data.display_url);
       })
       .catch((error) => {
-        console.log(error);
+
       });
   };
 
   const [productDetails,setProductDetails] =useState({
     productName : "",
-    productWight : "",
+    productWeight : "",
     productPrice : "",
+    productImage : ""
   })
 
   const handleOnChanage = (e) =>{
@@ -37,11 +38,10 @@ const AddProduct = () => {
   const handleOnSubmit = (event) => {
       event.preventDefault()
       clearForm()
-      console.log(productDetails)
       const addProduct = {...productDetails}
       addProduct.productImage = productImageURL;
 
-        fetch("http://localhost:5000/addProduct", {
+        fetch("https://lychee-custard-23954.herokuapp.com/addProduct", {
             method : "POST",
             headers : {'Content-Type' : 'application/json'},
             body : JSON.stringify(addProduct)
@@ -52,7 +52,7 @@ const AddProduct = () => {
   const clearForm = () =>{
       setProductDetails({
         productName : "",
-        productWight : "",
+        productWeight : "",
         productPrice : "",
         productImage : ""
       })
@@ -72,8 +72,8 @@ const AddProduct = () => {
               <Form.Control name="productName" value={productDetails.productName} type="text" onChange={handleOnChanage} placeholder="Enter name" />
             </Form.Group>
             <Form.Group className="col-6">
-              <Form.Label>Wight</Form.Label>
-              <Form.Control name="productWight" value={productDetails.productWight} type="text" onChange={handleOnChanage} placeholder="Enter wight" />
+              <Form.Label>Weight/(GSM for Cloths)</Form.Label>
+              <Form.Control name="productWeight" value={productDetails.productWeight} type="text" onChange={handleOnChanage} placeholder="Enter weight" />
             </Form.Group>
             <Form.Group className="col-6">
               <Form.Label>Add Price</Form.Label>
@@ -84,7 +84,7 @@ const AddProduct = () => {
               <Form.Control onChange={handleImageUpload} type="file" />
             </Form.Group>
           </Form.Row>
-          <Button variant="primary" type="submit">
+          <Button variant="success" type="submit">
             Save
           </Button>
         </Form>
