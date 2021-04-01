@@ -1,0 +1,12 @@
+.page-head-title{
+    text-decoration: none !important;
+    font-size: 25px;
+    font-weight: 900;
+    color: black;
+}
+.nav-item{
+    margin: auto 14px;
+    text-decoration: none !important;
+    color: black;
+    font-weight: 600;
+}

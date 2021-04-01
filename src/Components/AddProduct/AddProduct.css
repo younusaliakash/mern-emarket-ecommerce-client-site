@@ -1,0 +1,27 @@
+.action-section{
+    background-color: #F4FCFB;
+    min-width: 65vw;
+    max-width: 65vw;
+}
+.admin-menu-page-title{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.admin-menu-page-title > h5{
+    padding: 10px !important;
+    font-weight: 700 !important;
+}
+.form-area{
+    background-color: white;
+    min-width: 40vw;
+    min-height: 40vh;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px gray;
+}
+.add-product-form{
+    padding: 20px;
+}

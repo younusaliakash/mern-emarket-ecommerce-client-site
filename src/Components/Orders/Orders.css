@@ -1,0 +1,22 @@
+.order-history-box{
+    min-height: 90vh;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px gray;
+}
+.title-box{
+    padding: 20px;
+}
+.user-name{
+    color: #3BC83B;
+}
+.order-product-description{
+    padding: 5px 20px;
+    align-items: center;
+    background-color: #F5F6FA;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.loading-orders{
+    padding-left: 30vw;
+}

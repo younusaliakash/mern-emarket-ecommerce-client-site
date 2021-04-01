@@ -1,0 +1,60 @@
+.title{
+    text-align: center;
+    padding-top: 15px;
+}
+.log-in-card{
+    background-color: white !important;
+    max-width: 440px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+}
+.logIn-form{
+    padding: 20px !important;
+}
+.log-in-btn{
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 15px !important;
+}
+.icon{
+    width: 30px;
+    float: left;
+}
+.or{
+    width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid gray; 
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+.or span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+.social-link{
+    text-decoration: none !important;
+    color: black;
+    font-weight: 700;
+}
+/* .social-link:hover {
+    color: white;
+} */
+.social{
+    border: 1px solid gray;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    padding: 8px;
+    min-height: 50px;
+    cursor: pointer;
+    min-width: 220px;
+}
+.google-area:hover{
+    color: white !important;
+    background-color: red;
+}
+/* .facebook-area:hover{
+    color: white !important;
+    background-color: #1877F2;
+} */

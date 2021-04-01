@@ -1,0 +1,30 @@
+.manage-product-area{
+    background-color: #FFFFFF;
+    min-width: 50vw;
+    min-height: 78vh;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px gray;
+}
+.loading-products{
+    padding-left: 20vw;
+}
+.table-title{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: thistle;
+}
+.edit-icon{
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+.delete-icon{
+    color: white;
+    cursor: pointer;
+}
+.edit{
+    margin-right: 5px;
+}
